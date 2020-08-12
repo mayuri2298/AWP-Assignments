@@ -1,0 +1,11 @@
+.common-style {
+    color: green;
+    background: black;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    height: 50px;
+    align-items: center;
+    padding: 12px
+}
