@@ -1,0 +1,16 @@
+let person = {
+    name:"sachin",
+    lastName:"tendulkar",
+    id:1
+};
+undefined
+person.name
+"sachin"
+person.id
+1
+let list =[{name:"mayuri",lastname:"chavan",id:22},{name:"nikhil",lastname:"batgeri",id:31}];
+undefined
+list[1]
+{name: "nikhil", lastname: "batgeri", id: 31}
+list[0]
+{name: "mayuri", lastname: "chavan", id: 22}

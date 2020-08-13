@@ -1,0 +1,44 @@
+*array-
+let a=["mayuri","shivani","nikhil","pooja","shubham","sujit","ashish"]
+undefined
+a[2]
+"nikhil"
+a[1]
+"shivani"
+
+for(let i=0;i<a.length;i++)
+{    
+    const name=a[i];
+    console.log(name);
+}
+VM1133:4 mayuri
+VM1133:4 shivani
+VM1133:4 nikhil
+VM1133:4 pooja
+VM1133:4 shubham
+VM1133:4 sujit
+VM1133:4 ashish
+
+*splice-
+let ppl=["mayuri","shivani","nikhil","pooja","shubham","sujit","ashish"]
+undefined
+ppl.push("dhanashree")
+8
+ppl
+(8) ["mayuri", "shivani", "nikhil", "pooja", "shubham", "sujit", "ashish", "dhanashree"]
+ppl.pop
+ƒ pop() { [native code] }
+ppl.pop()
+"dhanashree"
+ppl.splice(1,1)
+["shivani"]
+ppl
+(6) ["mayuri", "nikhil", "pooja", "shubham", "sujit", "ashish"]
+ppl.splice(1,0,"sejal","abhishek")
+[]
+ppl
+(8) ["mayuri", "sejal", "abhishek", "nikhil", "pooja", "shubham", "sujit", "ashish"]
+ppl.splice(6,2)
+(2) ["sujit", "ashish"]
+ppl
+(6) ["mayuri", "sejal", "abhishek", "nikhil", "pooja", "shubham"]
