@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1, shrink-to-fit=no">
+    <title>Facebook-Post</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="1.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--row1-->
+        <div class="row bg-secondary align-items-center" style="height: 60px;">
+            <div class="col ">My Profile</div>
+            <div class="col-1 d-flex justify-content-end ">Logout</div>
+        </div>
+        <!--row2-->
+        <div class="row justify-content-center ">
+            <div class="col-12 col-md-6 d-flex flex-column ">
+                <!--Post-->
+                <div class="row border">
+                    <div class="col d-flex justify-content-center align-items-center" style="height:200px">Home</div>
+                </div>
+                <!--button-->
+                <div class="row ">
+                    <div class="col-3 p-0">
+                        <button class="btn btn-sm btn-outline-secondary btn-block" onclick="clickMe(this)">Like <span>0</span> </button>
+                    </div>
+                    <div class="col-6 p-0">
+                        <input type="text" name="" class="form-control form-control-sm" placeholder="Add your comment">
+                    </div>
+                    <div class="col-3 p-0">
+                        <button class="btn btn-sm btn-outline-secondary btn-block" onclick="commentHere(this)">Comment</button>
+                    </div>
+                </div>
+                <!--CommentBox-->
+                <div class="d-flex flex-column">
+                    <div class="row mt-1">
+                        <div class="col-10 p-0">Sample Comment</div>
+                        <div class="col-2 p-0">
+                            <button class="btn btn-sm btn-outline-secondary btn-block" onclick="deleteHere(this)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

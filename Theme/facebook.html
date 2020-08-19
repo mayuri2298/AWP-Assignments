@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1, shrink-to-fit=no">
+    <title>FB Clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="facebook.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid"></div>
+    <div>
+    <!--First Child-->
+        <div style="display:flex;height: 10vh;background:rgb(38, 163, 236)">
+            <div style="flex: 1;display:flex;justify-content:center;align-items:center">My Profile</div>
+            <div style="flex: 2;display:flex;justify-content:center;align-items:center">Home</div>
+            <div style="flex: 1;display:flex;justify-content:center;align-items:center">Logout</div>
+        </div>
+    <!--second child-->    
+        <div style="height: 90vh;display:flex">
+            <!--1st-->
+            <div style="flex: 1;"></div>
+            <!--2nd-->
+            <div style="flex: 2;display:flex;flex-direction:column;height:40vh;background:grey">
+                <!--1-->
+                <div style="flex: 4;display:flex;justify-content:center;align-items:center">Post</div>
+                <!--2-->
+                <div style="flex: 1;display:flex">
+                    <div style="flex: 1;">
+                        <button class="btn btn-outline-info btn-block" onclick="likeMe(this)">Like <span>0</span></button>
+                    </div>
+                    <div style="flex: 3;">
+                        <input type="text" name="" class="form-control" placeholder="Write your comment">
+                    </div>
+                    <div style="flex: 1;">
+                        <button class="btn btn-outline-info btn-block" onclick="commentMe(this)">Comment</button>
+                    </div>
+                </div>
+                <!--3-->
+                <div style="flex: 1;">
+                    <div style="display: flex;">
+                        <div style="flex: 2;">Sample Comment</div>
+                        <div style="flex: 1; display:flex;justify-content:flex-end">
+                            <button class="btn btn-outline-info" onclick="deleteMe(this)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <!--3rd-->
+            <div style="flex: 1"></div>
+        </div>
+    </div>
+</body>
+
+</html>

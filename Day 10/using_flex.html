@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Flex</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+    </style>
+    <script src="using_flex.js"></script>
+</head>
+
+<body>
+    <div style="height: 100vh;background:gray">
+        <div style="display: flex;height:60px;background:goldenrod">
+            <div style="flex: 1;padding:20px">My Profile</div>
+            <div style="flex: 1;padding:20px;display:flex;justify-content:flex-end">Logout</div>
+        </div>
+        <div style="display:flex;height: 200px;">
+            <div style="flex: 1;"></div>
+            <div style="display:flex;flex-direction:column;flex:1;background: yellowgreen;">
+                <div style="flex: 5;display:flex;justify-content:center;align-items:center">Hello</div>
+                <div style="display:flex;flex: 1;">
+                    <div style="flex: 1;display:flex;justify-content:center">
+                        <button onclick="likeme(this)">Like <span>0</span></button>
+                    </div>
+                    <div style="flex: 4;display:flex;justify-content:center">
+                        <input type="text" name="" id="">
+                    </div>
+                    <div style="flex: 1;display:flex;justify-content:center">
+                        <button onclick="commentme(this)">Comment</button>
+                    </div>
+                </div>
+                <div style="display: flex; flex:1">
+                    <div style="flex: 2;padding:2px">Sample Comment</div>
+                    <div style="flex: 1;display:flex;justify-content:flex-end">
+                        <button style="background:goldenrod;" onclick="deleteCmnt(this)">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div style="flex: 1;"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

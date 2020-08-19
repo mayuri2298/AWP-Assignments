@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button</title>
+    <script>
+        function clikMe() {
+            let rdb1 = document.querySelector("#rd1");
+            let rdb2 = document.querySelector("#rd2");
+            if (rdb1.checked === true)
+                alert(rdb1.value + "selected")
+            else if (rdb2.checked === true)
+                alert(rdb2.value + " selected")
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="radio" name="sub1" id="rd1">Maths
+    </div>
+    <div>
+        <input type="radio" name="sub1" id="rd2">English
+    </div>
+    <div>
+        <button onclick="clikMe()">Click It</button>
+    </div>
+    <div id="option"></div>
+</body>
+
+</html>

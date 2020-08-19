@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script>
+        function validate() {
+            let username = document.querySelector("#uname")
+            let pswrd = document.querySelector("#pass");
+
+            if (username.value.trim() == "") {
+                alert("blank username")
+                return false;
+            } else if (pswrd.value.trim() == "") {
+                alert("blank password")
+                return false;
+            } else if (pswrd.value.trim().length < 5) {
+                alert("Password is too short")
+                return false;
+            } else {
+                return true;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form onsubmit="return validate();" action="facebook.html">
+            <div>
+                <div>Username</div>
+                <input type="text" name="" id="uname">
+            </div>
+
+            <div>
+                <div>Password</div>
+                <input type="password" name="" id="pass">
+            </div>
+
+            <div style="margin-top: 15px;">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

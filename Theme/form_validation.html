@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clikme() {
+            let user = document.querySelector("#id1").value;
+            let pass = document.querySelector("#id2").value;
+
+            if (user === "" || pass === "") {
+                alert("please enter values");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="clickme()" action="msg.html">
+        <input type="text" name="" id="id1" placeholder="Username"><br><br>
+        <input type="password" name="" id="id2" placeholder="Password"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
